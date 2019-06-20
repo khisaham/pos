@@ -87,13 +87,13 @@ Please DO NOT post issues if you have not done those step.
 
 Bug reports must follow this schema:
 
-1. pos **version string with git commit hash** (see ospos footer)
+1. pos **version string with git commit hash** (see pos footer)
 2. POS name and version running your Web Server (e.g. CentOS 6.9, Ubuntu 16.4, Windows 10)
 3. Web Server name and version (e.g. Apache 2.2, Apache 2.4, Nginx 1.12, Nginx 1.13)
 4. Database name and version (e.g. MySQL 5.5, MySQL 5.6, MySQL 5.7, MariaDB 10.0, MariaDB 10.1, MariaDB 10.2)
 5. PHP version (e.g. 5.6, 7.0, 7.1, 7.2)
-6. Language selected in OSPOS (e.g. English, Spanish)
-7. Any configuration of OSPOS that you changed
+6. Language selected in POS (e.g. English, Spanish)
+7. Any configuration of POS that you changed
 8. Exact steps to reproduce the issue (test case)
 9. Optionally some screenshots to illustrate each step
 
@@ -109,11 +109,11 @@ FAQ
 * If at login time you read "The installation is not correct, check your php.ini file.", please check the error_log in public folder to understand what's wrong and make sure you read the [INSTALL.md](https://github.com/khisaham/pos/blob/master/INSTALL.md).
 
 
-* Apache server configurations are SysAdmin issues and not strictly related to POS. Please make sure you first can show a "hello world" html page before pointing to OSPOS public directory. Make sure .htaccess is correctly configured.
+* Apache server configurations are SysAdmin issues and not strictly related to POS. Please make sure you first can show a "hello world" html page before pointing to POS public directory. Make sure .htaccess is correctly configured.
 
 * If the avatar pictures are not shown in Items or at Item save time you get an error, please make sure your public and subdirs are assigned to the correct owner and the access permission is set to 755.
 
-* If you install ospos in docker behind a proxy that performs ssloffloading, you can enable the url generated to be https instead of http, by activating the environment variable FORCE_HTTPS = 1.
+* If you install pos in docker behind a proxy that performs ssloffloading, you can enable the url generated to be https instead of http, by activating the environment variable FORCE_HTTPS = 1.
 
 
 Credits
