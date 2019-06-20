@@ -9,7 +9,7 @@
 Introduction
 ------------
 
-Open Source Point of Sale is a web based point of sale system.
+Point of Sale is a web based point of sale system.
 The main features are:
 * Stock management (Items and Kits)
 * VAT, customer and multi tiers taxation
@@ -40,16 +40,6 @@ It also has improved functionality and security.
 
 Deployed to a Cloud it's a SaaS (Software as a Service) solution.
 
-DEMO
-----
-
-A demo version of the latest master version can be found on our [Demo server](https://demo.opensourcepos.org). This is a containerized install which will be reinitialized when new functionality is added to the code repository.
-
-LOGIN using
-* username: admin
-* password: pointofsale
-
-
 Installation
 ------------
 
@@ -57,7 +47,7 @@ Please **refrain from creating issues** about installation issues **before readi
 
 This application **can be setup in many different ways** and we only **support the ones described in the INSTALL file linked below**.
 
-Read the [INSTALL.md](https://github.com/opensourcepos/opensourcepos/blob/master/INSTALL.md) in our repository.
+Read the [INSTALL.md](https://github.com/khisaham/pos/blob/master/INSTALL.md) in our repository.
 
 
 License
@@ -74,7 +64,7 @@ Also worth noting:
 _The above copyright notice and this permission notice shall be included in all
 copies or substantial portions of the Software._
 
-For more details please read the file [LICENSE](https://github.com/opensourcepos/opensourcepos/blob/master/LICENSE).
+For more details please read the file [LICENSE](https://github.com/khisaham/pos/blob/master/LICENSE).
 
 It's important to understand that althought you are free to use the software the copyright stays and the license agreement applies in all cases.
 Therefore any actions like:
@@ -88,23 +78,6 @@ In short you are free to use the software but you cannot claim any property on i
 Any person or company found breaching the license agreement will have a bunch of monkeys at the door ready to destroy their servers.
 
 
-Keep the Machine Running
-------------------------
-
-If you like the project, and you are making money out of it in some form, then consider buying us a coffee so we can keep adding features.
-
-[![Donate](https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=MUN6AEG7NY6H8)
-
-
-Language Translations
----------------------
-
-To help us with OSPOS translations please use [Weblate website here](http://translate.opensourcepos.org) and sign up. After registering you can subscribe to different languages and you will be notified once a new translation is added.
-
-Please also read the [wiki page here](https://github.com/opensourcepos/opensourcepos/wiki/Adding-translations) to find our Translations Guideline.
-
-Only with the help of the community we can keep language translations up to date.
-
 
 Reporting Bugs
 --------------
@@ -114,8 +87,8 @@ Please DO NOT post issues if you have not done those step.
 
 Bug reports must follow this schema:
 
-1. Ospos **version string with git commit hash** (see ospos footer)
-2. OS name and version running your Web Server (e.g. CentOS 6.9, Ubuntu 16.4, Windows 10)
+1. pos **version string with git commit hash** (see ospos footer)
+2. POS name and version running your Web Server (e.g. CentOS 6.9, Ubuntu 16.4, Windows 10)
 3. Web Server name and version (e.g. Apache 2.2, Apache 2.4, Nginx 1.12, Nginx 1.13)
 4. Database name and version (e.g. MySQL 5.5, MySQL 5.6, MySQL 5.7, MariaDB 10.0, MariaDB 10.1, MariaDB 10.2)
 5. PHP version (e.g. 5.6, 7.0, 7.1, 7.2)
@@ -131,23 +104,21 @@ If missing information is not provided within a week we will close your issue.
 FAQ
 ---
 
-* If you are seeing the message **system folder missing**, then you have cloned the source using git and you need to run a build *first*. Check [INSTALL.md](https://github.com/opensourcepos/opensourcepos/blob/master/INSTALL.md) for instructions or download latest zip file from [bintray](https://bintray.com/jekkos/opensourcepos/opensourcepos/view/files?sort=updated&order=desc#files) instead.
+* If you are seeing the message **system folder missing**, then you have cloned the source using git and you need to run a build *first*. Check [INSTALL.md](https://github.com/khisaham/pos/blob/master/INSTALL.md) for instructions.
 
-* If at login time you read "The installation is not correct, check your php.ini file.", please check the error_log in public folder to understand what's wrong and make sure you read the [INSTALL.md](https://github.com/opensourcepos/opensourcepos/blob/master/INSTALL.md). To know how to enable error_log, please read the comment in [issue 1770](https://github.com/opensourcepos/opensourcepos/issues/1770#issuecomment-355177943).
+* If at login time you read "The installation is not correct, check your php.ini file.", please check the error_log in public folder to understand what's wrong and make sure you read the [INSTALL.md](https://github.com/khisaham/pos/blob/master/INSTALL.md).
 
-* If you installed your OSPOS under a web server subdir, please edit public/.htaccess and go to the lines with comment `if in web root` and `if in subdir comment above line, uncomment below one and replace <OSPOS path> with your path` and follow the instruction on the second comment line. If you face more issues please read [issue #920](https://github.com/opensourcepos/opensourcepos/issues/920) for more help.
 
-* Apache server configurations are SysAdmin issues and not strictly related to OSPOS. Please make sure you first can show a "hello world" html page before pointing to OSPOS public directory. Make sure .htaccess is correctly configured.
+* Apache server configurations are SysAdmin issues and not strictly related to POS. Please make sure you first can show a "hello world" html page before pointing to OSPOS public directory. Make sure .htaccess is correctly configured.
 
 * If the avatar pictures are not shown in Items or at Item save time you get an error, please make sure your public and subdirs are assigned to the correct owner and the access permission is set to 755.
 
 * If you install ospos in docker behind a proxy that performs ssloffloading, you can enable the url generated to be https instead of http, by activating the environment variable FORCE_HTTPS = 1.
 
-* If you have suhosin installed and face an issue with CSRF, please make sure you read [issue #1492](https://github.com/opensourcepos/opensourcepos/issues/1492).
 
 Credits
 -------
 |JetBrains|Travis CI|
 |:-:|:-:|
 |![IntelliJ IDEA](https://raw.githubusercontent.com/wiki/j-easy/easy-batch/images/logo/intellijidea-logo.png)|[Travis CI](https://travis-ci.com/images/logos/TravisCI-Full-Color.png)|
-|Many thanks to [JetBrains](https://www.jetbrains.com/) for providing a free license of [IntelliJ IDEA](https://www.jetbrains.com/idea/) to kindly support the development of OSPOS|Many thanks to [Travis CI](https://travis-ci.org) for providing a free continuous integration service for open source projects.|
+|Many thanks to [JetBrains](https://www.jetbrains.com/) for providing a free license of [IntelliJ IDEA](https://www.jetbrains.com/idea/) to kindly support the development of POS|Many thanks to [Travis CI](https://travis-ci.org) for providing a free continuous integration service for open source projects.|
