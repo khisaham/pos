@@ -1,9 +1,9 @@
-[ ![Download](https://api.bintray.com/packages/jekkos/opensourcepos/opensourcepos/images/download.svg?version=3.2.3) ](https://bintray.com/jekkos/opensourcepos/opensourcepos/3.2.3/link)
-[![Build Status](https://travis-ci.org/opensourcepos/opensourcepos.svg?branch=master)](https://travis-ci.org/opensourcepos/opensourcepos)
-[![Join the chat at https://gitter.im/opensourcepos](https://badges.gitter.im/jekkos/opensourcepos.svg)](https://gitter.im/opensourcepos?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
-[![devDependency Status](https://david-dm.org/jekkos/opensourcepos/dev-status.svg)](https://david-dm.org/jekkos/opensourcepos#info=dev)
-[![GitHub version](https://badge.fury.io/gh/jekkos%2Fopensourcepos.svg)](https://badge.fury.io/gh/jekkos%2Fopensourcepos)
-[![Translation status](http://weblate.jpeelaer.net/widgets/ospos/-/svg-badge.svg)](http://weblate.jpeelaer.net/engage/ospos/?utm_source=widget)
+[ ![Download](https://github.com/khisaham/pos/archive/master.zip) ](https://github.com/khisaham/pos/archive/master.zip)
+[![Build Status](https://github.com/khisaham/pos/archive/master.zip)](https://github.com/khisaham/pos/archive/master.zip)
+[![Join the chat at https://gitter.im/pos](https://github.com/khisaham/pos/archive/master.zip)
+[![devDependency Status](https://github.com/khisaham/pos/archive/master.zip)
+[![GitHub version](https://github.com/khisaham/pos/archive/master.zip)
+[![Translation status](https://github.com/khisaham/pos/archive/master.zip)](https://github.com/khisaham/pos/archive/master.zip)
 
 
 Introduction
